@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const Margin = styled.div`
-    padding: 0 15%;
+    padding: 1rem 15%;
 `

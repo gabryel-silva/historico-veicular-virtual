@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import '../_variables/root.css'
 
 export const BodyGlobalStyles = createGlobalStyle`
     @import url(var(--font-family));

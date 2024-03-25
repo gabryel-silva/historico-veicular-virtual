@@ -1,9 +1,10 @@
 :root{
     /*Paleta de cores*/
-    --blue-10:   #1D242B;
-    --blue-50:   #0077C0;
-    --blue-90:   #C7EEFF;
-    --white-95:  #FDB827;
+    --blue-10:    #1D242B;
+    --blue-50:    #0077C0;
+    --blue-90:    #C7EEFF;
+    --yellow-50:  #FDB827;
+    --blue-50-opacity-10: rgba(0, 119, 192, .10);
 
     --font-family: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap';
 
