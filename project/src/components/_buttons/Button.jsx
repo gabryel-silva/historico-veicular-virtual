@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Margin } from "../config/_margin-container/Margin.js";
-
 
 export const Btn = styled.button`
     padding: .5rem;
@@ -12,12 +10,8 @@ export const Btn = styled.button`
     width: 100%;
 `
 
-function Button(){
-    return(
-        <Margin>
-            <Btn>Botão</Btn>
-        </Margin>
-    );
+export const Button = (props) => {
+    return (
+        <Btn>{props.cta}</Btn>
+    )
 }
-
-export default Button;

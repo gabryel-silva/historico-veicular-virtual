@@ -7,6 +7,7 @@ export const BodyGlobalStyles = createGlobalStyle`
     body{
         width: 100vw;
         height: 100%;
+        box-sizing: border-box;
         font-family: "Inter", sans-serif;
     }
 `
