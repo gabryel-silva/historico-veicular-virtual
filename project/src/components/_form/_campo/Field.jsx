@@ -43,12 +43,12 @@ export const Field = (props) => {
     if (inputValue.trim() === "" || !inputValue) {
       setLabelActive((prevLabelActive) => !prevLabelActive);
     }
-  };
+  }
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
-  };
-
+  }
+  
   const placeholder = !labelActive ? "" : "Este campo não pode estar vazio";
 
   return (
@@ -68,4 +68,4 @@ export const Field = (props) => {
       </InputContainer>
     </StyledFieldset>
   );
-};
+}

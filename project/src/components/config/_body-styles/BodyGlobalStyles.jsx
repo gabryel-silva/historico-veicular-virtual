@@ -9,5 +9,17 @@ export const BodyGlobalStyles = createGlobalStyle`
         height: 100%;
         box-sizing: border-box;
         font-family: "Inter", sans-serif;
+        background: ${(props) => props.bg};
+        color: ${(props) => props.colorText};
+
+        h1, h2{
+            font-size: ${(props) => props.titleSize};
+            font-weight: 700;
+        }
+
+        h3, h4, h5{
+            font-size: ${(props) => props.subtitleSize};
+            font-weight: 600;            
+        }
     }
 `

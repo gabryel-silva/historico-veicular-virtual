@@ -10,28 +10,35 @@ import { Login } from './routes/Login';
 import { Cadastro } from './routes/Cadastro';
 import { Home } from './routes/Home';
 import { Error } from './routes/ErrorPage';
+import { RegistrationSuccess } from './routes/RegistrationSuccess';
 
-const router = createBrowserRouter([
-  { 
-    path: "/",
-    element: <App />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: "/",
-        element: <Login />,
-      },
-      {
-        path: "cadastro",
-        element: <Cadastro />,
-      },
-      {
-        path: "home",
-        element: <Home/>,
-      },
-    ],
-  }
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "/",
+          element: <Login />,
+        },
+        {
+          path: "cadastro",
+          element: <Cadastro />,
+        },
+        {
+          path: "home",
+          element: <Home />,
+        },
+        {
+          path: "RegistrationSuccess",
+          element: <RegistrationSuccess />,
+        },
+      ],
+    }
+  ]
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
