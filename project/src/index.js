@@ -7,10 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Login } from './routes/Login';
-import { Cadastro } from './routes/Cadastro';
+import { Cadastro } from './routes/_cadastro/Cadastro';
 import { Home } from './routes/Home';
 import { Error } from './routes/ErrorPage';
 import { RegistrationSuccess } from './routes/RegistrationSuccess';
+import { CadastroEmpresa } from './routes/_cadastro/empresa/CadastroEmpresa';
+import { CadastroVeiculo } from './routes/CadastroVeiculo';
+import { Perfil } from './routes/Perfil';
 
 const router = createBrowserRouter(
   [
@@ -35,6 +38,18 @@ const router = createBrowserRouter(
           path: "RegistrationSuccess",
           element: <RegistrationSuccess />,
         },
+        {
+          path: "cadastroEmpresa",
+          element: <CadastroEmpresa />,
+        },
+        {
+          path: "cadastroVeiculo",
+          element: <CadastroVeiculo />
+        },
+        {
+          path: "perfil",
+          element: <Perfil />
+        }
       ],
     }
   ]

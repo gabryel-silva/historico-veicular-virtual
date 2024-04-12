@@ -7,10 +7,13 @@ export const BodyGlobalStyles = createGlobalStyle`
     body{
         width: 100vw;
         height: 100%;
+        padding: 0;
+        margin: 0;
         box-sizing: border-box;
         font-family: "Inter", sans-serif;
         background: ${(props) => props.bg};
         color: ${(props) => props.colorText};
+        overflow-x: hidden;
 
         h1, h2{
             font-size: ${(props) => props.titleSize};

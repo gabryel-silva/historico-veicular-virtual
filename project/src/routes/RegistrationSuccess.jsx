@@ -8,14 +8,27 @@ import { ReturnForPagePrevious } from "../components/_goToPage/ReturnForPagePrev
 export const RegistrationSuccess = () => {
   return (
     <>
-      <BodyGlobalStyles bg="var(--blue-10)" />
+      <BodyGlobalStyles
+        bg="var(--blue-10)"
+      />
       <Margin>
-          <FlexDirectionColumn gap="1rem" align="center" pTop="45vh">
-            <Message colorText="var(--white-95)" />
-            <Link to="/">
-              <ReturnForPagePrevious colorText="#B8BABC" title="Ir para a tela de login" />
-            </Link>
-          </FlexDirectionColumn>
+        <FlexDirectionColumn
+          gap="1rem"
+          align="center"
+          pTop="45vh"
+        >
+          <Message
+            colorText="var(--white-95)"
+          />
+          <Link
+            to="/"
+          >
+            <ReturnForPagePrevious
+              colorText="#B8BABC"
+              title="Ir para a tela de login"
+            />
+          </Link>
+        </FlexDirectionColumn>
       </Margin>
     </>
   )
