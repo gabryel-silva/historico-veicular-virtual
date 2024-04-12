@@ -4,8 +4,8 @@ import { Margin } from "../components/config/_margin-container/Margin";
 import { FlexDirectionRow } from "../components/_flex/_flex-row/FlexDirectionRow";
 import { TitleSection } from "../components/_titulo-secao/TitleSection"
 import logout from "../assets/img/logout.svg"
-import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { SearchBar } from "../components/_search/SearchBar";
 import { DialogBox } from "../components/_dialogBox/DialogBox";
 import { ButtonMenu } from "../components/_buttons/ButtonMenu";
@@ -45,7 +45,7 @@ export const Home = () => {
 
     return (
         <>
-            <BodyGlobalStyles />
+            <BodyGlobalStyles bg="white"/>
             <ContainerHeader>
                 <Margin display="flex" gap="30px" flexD="column">
                     <FlexDirectionRow jc="space-between" align="center">
@@ -61,20 +61,20 @@ export const Home = () => {
             <Margin display="flex" gap="30px" flexD="column">
                 <FlexDirectionRow gap="10px">
                     {
-                            ButtonMenuProps.map((item, index) => (
-                                <PlainLink key={index} to={item.path}>
-                                    <ButtonMenu
-                                        color={item.color}
-                                        bg={item.bg}
-                                        img={item.img}
-                                        alt={item.alt}
-                                        title={item.title}
-                                    />
-                                </PlainLink>
-                            )
-                        )
+                        ButtonMenuProps.map((item, index) => (
+                            <PlainLink key={index} to={item.path}>
+                                <ButtonMenu
+                                    color={item.color}
+                                    bg={item.bg}
+                                    img={item.img}
+                                    alt={item.alt}
+                                    title={item.title}
+                                />
+                            </PlainLink>
+                        ))
                     }
                 </FlexDirectionRow>
+
             </Margin>
         </>
     );
