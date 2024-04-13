@@ -93,7 +93,9 @@ export const CadastroEmpresa = () => {
           <SelectRegisterCompany></SelectRegisterCompany>
           <Form>
             {listItens.map((item, index) => (<Field key={index} label={item.field} type={item.type} />))}
-            <Button cta="Salvar" />
+            <Link to="/RegistrationSuccess">
+              <Button cta="Salvar" />
+            </Link>
           </Form>
         </FlexDirectionColumn>
       </Margin>

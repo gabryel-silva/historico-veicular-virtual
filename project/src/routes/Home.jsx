@@ -11,6 +11,7 @@ import { DialogBox } from "../components/_dialogBox/DialogBox";
 import { ButtonMenu } from "../components/_buttons/ButtonMenu";
 import carIcone from "../assets/img/car-icon.svg";
 import perfilIcone from "../assets/img/perfil-icon.svg";
+import { CardMenu } from "../components/_cardMenu/CardMenu";
 
 const PlainLink = styled(RouterLink)`
   text-decoration: none;
@@ -33,7 +34,7 @@ export const Home = () => {
             color: "var(--blue-50)",
             bg: "transparent",
         },
-        {   
+        {
             path: "/perfil",
             img: `${perfilIcone}`,
             alt: "icone de usuário",
@@ -45,7 +46,7 @@ export const Home = () => {
 
     return (
         <>
-            <BodyGlobalStyles bg="white"/>
+            <BodyGlobalStyles bg="var(--white-95)" />
             <ContainerHeader>
                 <Margin display="flex" gap="30px" flexD="column">
                     <FlexDirectionRow jc="space-between" align="center">
@@ -54,8 +55,12 @@ export const Home = () => {
                             <img src={logout} alt="Botão voltar" />
                         </Link>
                     </FlexDirectionRow>
-                    <SearchBar></SearchBar>
-                    <DialogBox>Para realizar a consulta do veículo, insira o nome do veículo, placa ou modelo na barra de pesquisa acima para acessar suas informações.</DialogBox>
+                    <PlainLink to="/pesquisa">
+                        <SearchBar></SearchBar>
+                    </PlainLink>
+                    <DialogBox color="rgba(250, 250, 250, 0.8)" bg="rgba(206, 206, 206, 0.10)" p=".625rem">
+                        Para realizar a consulta do veículo, insira o nome do veículo, placa ou modelo na barra de pesquisa acima para acessar suas informações.
+                    </DialogBox>
                 </Margin>
             </ContainerHeader>
             <Margin display="flex" gap="30px" flexD="column">
@@ -74,7 +79,7 @@ export const Home = () => {
                         ))
                     }
                 </FlexDirectionRow>
-
+                <CardMenu />
             </Margin>
         </>
     );

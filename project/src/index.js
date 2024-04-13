@@ -14,6 +14,7 @@ import { RegistrationSuccess } from './routes/RegistrationSuccess';
 import { CadastroEmpresa } from './routes/_cadastro/empresa/CadastroEmpresa';
 import { CadastroVeiculo } from './routes/CadastroVeiculo';
 import { Perfil } from './routes/Perfil';
+import { Search } from './routes/Search';
 
 const router = createBrowserRouter(
   [
@@ -49,6 +50,10 @@ const router = createBrowserRouter(
         {
           path: "perfil",
           element: <Perfil />
+        },
+        {
+          path: "/pesquisa",
+          element: <Search/>
         }
       ],
     }
